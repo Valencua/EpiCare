@@ -3,18 +3,11 @@
 <head>
     <title>EpiCare</title> <!--Nombre de la página-->
 </head>
-<form action="/formulario" method = GET> <!--Interacción usuario e indicar una ruta-->
-    <label for="nombre">Nombre</label> <!--Label que dice Nombre, le aclaramos la etiqueta de nombre para que ya sea si se 
-    presiona tanto como el label, como el input, igualmente el foco sea dentro del texto-->
-    <input value="Valor por defecto" type="" id ="nombre" name="nombre" placeholder ="Nombre" /> <!--"name" Para que cuando se una a un servidor, lo reconozca con el name-->
-    <!--Y placeholder es para que haya un texto dentro del input, para ayudar al usuario a saber que ingresar
-    y el de type funciona con "password" para ocultar el valor, "email" esperando un formato de mail, "radio" que es como un circulito que se activa y 
-desactiva, "checkbox" cajita de tick, "file" para elegir un archivo, "submit" para hacer referencia a un botón, y etc-->
+<form action="/formulario" method = GET> 
+    <label for="nombre">Nombre</label>
+    <input value="Valor por defecto" type="" id ="nombre" name="nombre" placeholder ="Nombre" />
     <br>
-    <textarea cols="50" rows="10" id= "comentario" placeholder = "Ingrese Comentario" name="comentario">Este es un valor por defecto</textarea> <!-- Podemos manipular un área de texto-->
-    <button type ="button"> Enviar </button> <!--El type del botón, tiene de tipo "reset", para asignar los valores que tenia en un inicio, el tipo "button" que no ejecutará nada hasta que se le asigne una función con js,
-    y por último el type "submit" para guardar la información de los datos y seguir adelante. A estos se les puede asignar textos, imagenes, y más.-->
-    <!--El value = nos permite asignarle un valor ni bien se inicia la aplicación, sin embargo, como se aprecia en el caso de textarea, se necesita agregar este texto luego de las etiquetas-->
+    <textarea cols="50" rows="10" id= "comentario" placeholder = "Ingrese Comentario" name="comentario">Este es un valor por defecto</textarea> 
 </form>
 <body>
     <h1>Mi primer heading</h1>
@@ -23,17 +16,17 @@ desactiva, "checkbox" cajita de tick, "file" para elegir un archivo, "submit" pa
     <h4>Mi cuarto heading</h4>
     <h5>Mi quinto heading</h5>
     <h6>Mi sexto heading</h6>
-    <p> No sé que poner</p> <!--Párrafo-->
+    <p> No sé que poner</p> 
     <p> No sé que poner tampoco</p>
-    <hr> <!--Línea de separación-->
+    <hr> 
     <h2>Hola que tal</h2>
     <p> Texto un poco más</p>
     <p>
         Este texto es <span style="color:blue"> mucho más<br> largo</span> y es para la
-        etiqueta de span! <!--Sirve para seleccionar una parte del codigo de forma más silenciosa y br para saltar linea-->
+        etiqueta de span!
     </p>
-    <a href="https://www.google.com"> Ir a google</a> <!--Pódemos navegar / hipervínculo. "target="_blank"" agregado al inicio hará que se abra en nueva pestaña-->
-    <img src="img/osito.png"/> <!--Para cargar una imagen instalada, con width="x" o height podemos escalarla, el img/ es para aclarar la carpeta-->
+    <a href="https://www.google.com"> Ir a google</a> 
+    <img src="img/osito.png"/> 
     
 </body>
 </html>

@@ -1,27 +1,30 @@
-<!DOCTYPE html> 
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>EpiCare</title> <!--Nombre de la página-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EpiCare</title>
+    <link href="design.css" rel="stylesheet" type="text/css">
 </head>
-<form action="/formulario" method = GET> 
-    <label for="nombre">Nombre</label>
-    <input id ="nombre" name="Nombre" placeholder ="Ingrese nombre" />
-    <br>
-    <label for="apellido">Apellido</label>
-    <input id="apellido" name="Apellido" placeholder="Ingrese apellido"/>
-    <br>
-    <label for="contraseña">Contraseña</label>
-    <input type="password" id="contraseña" name="Contraseña" placeholder="Ingrese contraseña"/>
-    <br>
-    <label for="usuario">Usuario</laber>
-    <input id="usuario" name="Usuario" placeholder="Ingrese usuario"/>
-    <br>
-    <label for="mail">Mail</label>
-    <input type="email" id="mail" name="Mail" placeholder="Ingrese su mail"/>
-    <br>
-    <label for="vinculo">¿Eres vínculo?</label>
-    <input type="checkbox" id="vinculo" name="Vinculo"/>
-    <br> 
-    <input type="submit"></input>
-</form>
+<body style="display:flex; align-items:center; justify-content:center;">
+    <div class="form">
+        <h2>Login</h2>
+        <div class="input">
+          <div class="inputBox">
+            <label>Username</label>
+            <input type="text" placeholder="example@ctw.io">
+          </div>
+          <div class="inputBox">
+            <label>Password</label>
+            <input type="password" placeholder="····">
+          </div>
+          <div class="inputBox">
+            <input type="submit" value="Sign in">
+          </div>
+        </div>
+        <p class="forget">Forgot Password? <a href="#">Click Here</a></p>
+      </div>
+</body>
 </html>
+

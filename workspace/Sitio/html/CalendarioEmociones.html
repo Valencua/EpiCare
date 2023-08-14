@@ -5,29 +5,30 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Calendario de Emociones</title>
 <style>
-    body{
-  overflow: hidden; 
-  justify-content: center;
-  align-items: center;
-  font-family: sans-serif;
-  min-height: 100vh;
-  background: url('PantallaFondo.jpg') no-repeat;
-  background-size: cover;
-  background-position: center;
-  display: flex; 
-  justify-content: center; 
-    }
-  .calendar-container
-  {
+  body {
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('PantallaFondo.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+  }
+  
+  .calendar-container {
     text-align: center;
   }
+  
   .calendar {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     gap: 5px;
-    width: 70%; 
-    margin: auto; 
+    width: 62%;
+    align-items: center;
+    margin: auto;
   }
+  
   .day {
     border: 1px solid #ccc;
     padding: 40px;
@@ -41,6 +42,7 @@
     top: 5px;
     left: 5px;
   }
+  
   .icon {
     font-size: 15px;
     cursor: pointer;

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calendario de Emociones</title>
+<style>
+    body{
+  overflow: hidden; 
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+  min-height: 100vh;
+  background: url('PantallaFondo.jpg') no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex; 
+  justify-content: center; 
+    }
+  .calendar-container
+  {
+    text-align: center;
+  }
+  .calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+    width: 70%; 
+    margin: auto; 
+  }
+  .day {
+    border: 1px solid #ccc;
+    padding: 40px;
+    position: relative;
+    background: transparent;
+    backdrop-filter: blur(20px);
+  }
+
+  .day-number {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+  }
+  .icon {
+    font-size: 15px;
+    cursor: pointer;
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+  }
+</style>
+</head>
+<body>
+<div class="calendar-container">
+    <h1>Calendario de Emociones</h1>
+    <div id="calendar" class="calendar"></div>
+</div>
+
+<script>
+  const calendarElement = document.getElementById('calendar');
+  
+  // Obtener la fecha actual
+  const currentDate = new Date();
+  let currentYear = currentDate.getFullYear();
+  let currentMonth = currentDate.getMonth();
+  
+  // Función para mostrar el calendario
+  function showCalendar(year, month) {
+    const daysInMonth = new Date(year, month + 1, 0).getDate();
+    const firstDayOfMonth = new Date(year, month, 1).getDay();
+    
+    const calendarGrid = document.createElement('div');
+    calendarGrid.className = 'calendar';
+    
+    // Llenar días en blanco hasta el primer día del mes
+    for (let i = 0; i < firstDayOfMonth; i++) {
+      const emptyDay = document.createElement('div');
+      emptyDay.className = 'day';
+      calendarGrid.appendChild(emptyDay);
+    }
+    
+    // Llenar días del mes
+    for (let day = 1; day <= daysInMonth; day++) {
+      const dayElement = document.createElement('div');
+      dayElement.className = 'day';
+      
+      const dayNumber = document.createElement('span');
+      dayNumber.className = 'day-number';
+      dayNumber.textContent = day;
+      
+      const icon = document.createElement('span');
+      icon.className = 'icon';
+      icon.textContent = '📌';
+      
+      // Agregar evento para agregar información a la base de datos al hacer clic en el icono
+      icon.addEventListener('click', () => {
+        const dateClicked = new Date(year, month, day);
+        // Aquí podrías implementar la lógica para agregar información a la base de datos
+        console.log('Fecha seleccionada:', dateClicked);
+      });
+      
+      dayElement.appendChild(dayNumber);
+      dayElement.appendChild(icon);
+      calendarGrid.appendChild(dayElement);
+    }
+    
+    calendarElement.innerHTML = '';
+    calendarElement.appendChild(calendarGrid);
+  }
+  
+  // Mostrar el calendario inicial
+  showCalendar(currentYear, currentMonth);
+</script>
+</body>
+</html>

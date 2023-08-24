@@ -3,54 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="stylecalendar.css">
 <title>Calendario de Emociones</title>
-<style>
-  body {
-    margin: 0;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background: url('PantallaFondo.jpg') no-repeat;
-    background-size: cover;
-    background-position: center;
-    font-family: sans-serif;
-  }
-  
-  .calendar-container {
-    text-align: center;
-  }
-  
-  .calendar {
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    gap: 5px;
-    width: 62%;
-    align-items: center;
-    margin: auto;
-  }
-  
-  .day {
-    border: 1px solid #ccc;
-    padding: 40px;
-    position: relative;
-    background: transparent;
-    backdrop-filter: blur(20px);
-  }
-
-  .day-number {
-    position: absolute;
-    top: 5px;
-    left: 5px;
-  }
-  
-  .icon {
-    font-size: 15px;
-    cursor: pointer;
-    position: absolute;
-    bottom: 5px;
-    right: 5px;
-  }
-</style>
 </head>
 <body>
 <div class="calendar-container">

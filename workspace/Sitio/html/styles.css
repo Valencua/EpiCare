@@ -78,6 +78,10 @@ body{
   justify-content: center;
   border-radius: 28px;
 }
+.card-back p{
+  color:black;
+  text-align: center;
+}
 .card-front {
   background-color: #623F68;
 }
@@ -167,9 +171,12 @@ body{
   border-radius: 10px;
 }
 #cerrar {
-  padding: 5px 10px;
+  padding: 2px 10px;
   display:flex;
-  background-color: #fff;
+}
+
+#cerrar img{
+  width:30px;
 }
 .emociones
 {
@@ -183,13 +190,34 @@ body{
   align-items: center;
   position: relative;
 }
-.emociones img:hover
+.felizfeliz img:hover
 {
 transform: scale(1.07);
-box-shadow: 0 0 5px #995FA3,
-              0 0 25px #995FA3,
-              0 0 50px #995FA3,
-              0 0 100px #995FA3;
+box-shadow: 0 0 50px #FAEC5E;
+              border-radius: 100%;
+}
+.feliz img:hover
+{
+transform: scale(1.07);
+box-shadow: 0 0 50px #C5D554;
+              border-radius: 100%;
+}
+.meh img:hover
+{
+transform: scale(1.07);
+box-shadow: 0 0 50px #A563A5;
+              border-radius: 100%;
+}
+.triste img:hover
+{
+transform: scale(1.07);
+box-shadow: 0 0 50px #71C6D0;
+              border-radius: 100%;
+}
+.enojado img:hover
+{
+transform: scale(1.07);
+box-shadow: 0 0 50px #BE1621;
               border-radius: 100%;
 }
 .photo {

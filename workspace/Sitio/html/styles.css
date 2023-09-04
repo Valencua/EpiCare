@@ -29,7 +29,14 @@ body{
   justify-content: space-evenly;
   justify-content: space-evenly;
   align-items: center;
-  text-transform: uppercase;
+}
+.profile {
+  display: flex;
+  list-style: none; 
+  width: 88vw;
+  justify-content: space-evenly;
+  justify-content: space-evenly;
+  align-items: center;
 }
  .botonbienv, .mascota{
  display:flex;

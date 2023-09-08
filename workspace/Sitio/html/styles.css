@@ -12,6 +12,25 @@ body{
   background-size: cover;
   background-position: center;
  }
+.vinculo1 {
+  display:flex;
+  position:relative;
+  justify-content: center;
+}
+.vinculo1 h2{
+  text-align: center;
+  color:black;
+  position:relative;
+  margin:5px;
+}
+.rect{
+  position:absolute;
+  top:220px;
+  background:#995FA3;
+  border-radius: 60px;
+  width: 150px;
+  height: 40px;
+}
 .barra{
   top: 0%;
   left: 0%;

@@ -85,14 +85,14 @@ body{
 .card2 {
   
   transform:translate(-520px, 80px);
-  height: 300px;
-  width: 200px;
+  height: 500px;
+  width: 500px;
   border-radius: 20px;
 }
 .card {
   transform:translate(520px, 80px);
-  height: 300px;
-  width: 200px;
+  height: 500px;
+  width: 500px;
   border-radius: 20px;
   
 }

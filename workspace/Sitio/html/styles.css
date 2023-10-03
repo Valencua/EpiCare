@@ -239,33 +239,39 @@ body{
   justify-content: space-evenly;
   align-items: center;
   position: relative;
+  transition: .5s;
 }
 .felizfeliz img:hover
 {
+transition: .5s;
 transform: scale(1.07);
 box-shadow: 0 0 50px #FAEC5E;
               border-radius: 100%;
 }
 .feliz img:hover
 {
+transition: .5s;
 transform: scale(1.07);
 box-shadow: 0 0 50px #C5D554;
               border-radius: 100%;
 }
 .meh img:hover
 {
+transition: .5s;
 transform: scale(1.07);
 box-shadow: 0 0 50px #A563A5;
               border-radius: 100%;
 }
 .triste img:hover
 {
+transition: .5s;
 transform: scale(1.07);
 box-shadow: 0 0 50px #71C6D0;
               border-radius: 100%;
 }
 .enojado img:hover
 {
+transition: .5s;
 transform: scale(1.07);
 box-shadow: 0 0 50px #BE1621;
               border-radius: 100%;
@@ -283,8 +289,7 @@ box-shadow: 0 0 50px #BE1621;
   width: 400px;
   padding: 40px;
   transform: translate(-50%, -50%);
-  background: transparent;
-  backdrop-filter: blur(20px);
+  background: url(background.png);
   box-sizing: border-box;
   box-shadow: 0 15px 25px rgba(0,0,0,.6);
   border-radius: 10px;
@@ -303,6 +308,16 @@ box-shadow: 0 0 50px #BE1621;
 .form label {
   font-size: 14px;
   color: #fff;
+  
+}
+.form ::placeholder {
+  font-size: 14px;
+  color: #ded0e0;
+  
+}
+.form ::placeholder {
+  font-size: 14px;
+  color: #ded0e0;
   
 }
 .vinculo {
@@ -324,7 +339,7 @@ h2{
   font-size: 12px;
 }
 .form .message a {
-  color: #623F68;
+  color: #e4beeb;
   text-decoration: underline;
 }
 .form .register-form {
@@ -333,19 +348,18 @@ h2{
 .btn{
   position: relative;
   display: inline-block;
-  margin: 20px;
-  color: #995FA3;
+  margin: 30px;
   font-size: 20px;
   text-decoration: none;
   overflow: hidden;
-  margin-top: 10px;
+  margin-top: 8px;
 }
 .continuar{
-  height: 40px;
+  height: 50px;
   transition: .5s;
   background-color: #C687B9; 
-  border-radius: 15px; 
-  border: 5px solid #854671;
+  border-radius: 10px; 
+  border: 3px solid #854671;
 }
 .continuar:hover {
   transition: .5s;

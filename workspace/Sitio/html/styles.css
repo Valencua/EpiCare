@@ -83,32 +83,21 @@ body{
  justify-content: center;
  align-items: center;;
  }
-.card2 {
-  
-  transform:translate(-520px, 80px);
-  height: 500px;
-  width: 500px;
+.card2, .card {
+  width: 450px;
   border-radius: 20px;
-}
-.card {
-  transform:translate(520px, 80px);
-  height: 500px;
-  width: 500px;
-  border-radius: 20px;
-  
+  transform-style: preserve-3d; /* Mantiene la estructura 3D para los elementos hijos */
+  transition: 0.6s; /* Agrega una transición suave para las transformaciones */
+
 }
 .card-inner {
   height: 50px;
-  width: 500px;
   padding-bottom: 100%; 
-  transition:transform 0.6s;
+  transition: 0.6s;
   transform-style: preserve-3d;
   
 }
-.card:hover .card-inner {
-  transform:rotateY(180deg);
-}
-.card2:hover .card-inner {
+.card:hover .card-inner,.card2:hover .card-inner  {
   transform:rotateY(180deg);
 }
 .card-front, .card-back {
@@ -123,18 +112,22 @@ body{
 }
 .card-back p{
   color:black;
-  text-align: center;
+  position: absolute;
+  padding: 10px;
 }
 .card-front {
   border-radius: 40px;
-  background-color: #623F68;
+  background-color: #854671;
+  border:5px solid #672659;
+  padding: 10px;
 }
 .card-back {
-  background-color: transparent;
-  backdrop-filter: blur(20px);
+  border-radius: 40px;
+  padding: 10px;
   box-shadow: 0 15px 25px rgba(0,0,0,.6);
-  color: #fff;
+  background-color: #D190BF;
   transform:rotateY(180deg);
+  border:5px solid #672659;
 }
 .profile-page
 {
@@ -160,7 +153,7 @@ body{
 }
 .login-page {
   width: 400px;
-  padding: 8% 0 0;
+  padding: 0 0 0;
   margin: auto;
 }
 .data {
@@ -239,39 +232,38 @@ body{
   justify-content: space-evenly;
   align-items: center;
   position: relative;
-  transition: .5s;
 }
 .felizfeliz img:hover
 {
-transition: .5s;
+transition: .3s;
 transform: scale(1.07);
 box-shadow: 0 0 50px #FAEC5E;
               border-radius: 100%;
 }
 .feliz img:hover
 {
-transition: .5s;
+transition: .3s;
 transform: scale(1.07);
 box-shadow: 0 0 50px #C5D554;
               border-radius: 100%;
 }
 .meh img:hover
 {
-transition: .5s;
+transition: .3s;
 transform: scale(1.07);
 box-shadow: 0 0 50px #A563A5;
               border-radius: 100%;
 }
 .triste img:hover
 {
-transition: .5s;
+transition: .3s;
 transform: scale(1.07);
 box-shadow: 0 0 50px #71C6D0;
               border-radius: 100%;
 }
 .enojado img:hover
 {
-transition: .5s;
+transition: .3s;
 transform: scale(1.07);
 box-shadow: 0 0 50px #BE1621;
               border-radius: 100%;
@@ -287,7 +279,7 @@ box-shadow: 0 0 50px #BE1621;
   top: 50%;
   left: 50%;
   width: 400px;
-  padding: 40px;
+  padding: 20px;
   transform: translate(-50%, -50%);
   background: url(background.png);
   box-sizing: border-box;
@@ -296,23 +288,18 @@ box-shadow: 0 0 50px #BE1621;
 }
 .form input {
  width: 90%;
- padding: 10px 0;
+ padding: 5px 0;
  font-size: 13px;
- color: #fff;
- margin-bottom: 30px;
+ color: #E9B4CE;
+ margin-bottom: 15px;
  border: none;
- border-bottom: 1px solid #fff;
+ border-bottom: 1.5px solid #fff;
  outline: none;
  background: transparent;
 }
 .form label {
   font-size: 14px;
-  color: #fff;
-  
-}
-.form ::placeholder {
-  font-size: 14px;
-  color: #ded0e0;
+  color: #FFF7DB;
   
 }
 .form ::placeholder {
@@ -327,12 +314,6 @@ box-shadow: 0 0 50px #BE1621;
 h2{
  color:white;
 }
-
-.form .vinculo{
-  width: 30px;
-  
-}
-
 .form .message {
   margin: 15px 0 0;
   color: #fff;

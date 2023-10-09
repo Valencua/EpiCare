@@ -250,7 +250,7 @@ body{
 }
 
 #cerrar img{
-  width:30px;
+  width:40px;
 }
 .tc1{
   list-style: none;
@@ -263,7 +263,7 @@ body{
 {
   display: flex;
   list-style: none; 
-  top: -30px;
+  top: -10px;
   left: 140px;
   width: 400px;
   padding: 10px;

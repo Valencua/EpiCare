@@ -248,6 +248,20 @@ body{
   display:flex;
   cursor:pointer;
 }
+.ig{
+  background-color: #5F2D5A; 
+  padding:10px 30px; 
+  color:#FB95E4; 
+  border-radius: 10px; 
+  font-size: 20px;
+  width: 45%;
+  margin-bottom:50px;
+}
+.socials{
+  width: 76px;
+  margin:-3px;
+  margin-bottom:40px;
+}
 
 #cerrar img{
   width:40px;

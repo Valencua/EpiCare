@@ -354,6 +354,17 @@ box-shadow: 0 0 50px #BE1621;
   color: #FFF7DB;
   
 }
+.labels{
+  margin: -10px 20px;
+}
+.labels h1 {
+  color:#EAC5D1;
+  font-size: 30px;
+  margin-bottom: -10px;
+  padding: 0px;
+  letter-spacing: 0em; 
+  font-weight: 10;
+}
 .form ::placeholder {
   font-size: 14px;
   color: #ded0e0;

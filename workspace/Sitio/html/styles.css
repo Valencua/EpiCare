@@ -320,9 +320,6 @@ transform: scale(1.07);
 box-shadow: 0 0 50px #BE1621;
               border-radius: 100%;
 }
-.photo {
-  margin-top: -70px;
-}
 .form {
   position: relative;
   z-index: 1;
@@ -384,7 +381,19 @@ box-shadow: 0 0 50px #BE1621;
   color:#734068;
   font-size: 20px;
 }
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  grid-template-rows: repeat(2, 500px);
+  gap: 2rem;
+  grid-template-areas: "photo userinfo";
+}
 
+.photo img {
+  max-width: 50%; /* La imagen nunca será más ancha que su contenedor */
+  height: 50%; /* La altura se ajustará automáticamente para mantener la proporción */
+  align-self: center;
+}
 .form ::placeholder {
   font-size: 14px;
   color: #ded0e0;

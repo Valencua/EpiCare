@@ -383,15 +383,15 @@ box-shadow: 0 0 50px #BE1621;
 }
 .grid {
   display: grid;
-  grid-template-columns: repeat(2, 50%);
+  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 500px);
-  gap: 2rem;
   grid-template-areas: "photo userinfo";
+  gap:130px;
 }
 
 .photo img {
-  max-width: 50%; /* La imagen nunca será más ancha que su contenedor */
-  height: 50%; /* La altura se ajustará automáticamente para mantener la proporción */
+  width: 300px;
+  height: 300px; 
   align-self: center;
 }
 .form ::placeholder {

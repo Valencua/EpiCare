@@ -72,6 +72,7 @@ height: 650px;
   padding:5px 10px;
   padding-left: 15px;
   padding-bottom: 8px;
+  cursor:pointer;
 }
 .barra{
   top: 0%;
@@ -397,7 +398,7 @@ box-shadow: 0 0 50px #BE1621;
 }
 .datouser::placeholder {
   color: #773E65;
-  font-style: Jua;
+  font-family: 'Jua', sans-serif;
 }
 .datouser{
   height: 25px;

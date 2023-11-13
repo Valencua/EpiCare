@@ -386,6 +386,7 @@ box-shadow: 0 0 50px #BE1621;
 .labels{
   margin: 0px 20px;
 }
+
 .labels h1 {
   color:#EAC5D1;
   font-size: 35px;
@@ -393,6 +394,10 @@ box-shadow: 0 0 50px #BE1621;
   padding: 0px;
   letter-spacing: 0em; 
   font-weight: 10;
+}
+.datouser::placeholder {
+  color: #773E65;
+  font-style: Jua;
 }
 .datouser{
   height: 25px;

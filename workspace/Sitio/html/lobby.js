@@ -5,6 +5,7 @@ const botonMostrar = document.getElementById('abrir')
 const miCuadro1 = document.getElementById('cuadro1');
 const miCaja1 = document.getElementById('caja1');
 const perrito = document.getElementById('perritobusca');
+const edit = document.getElementById('edit');
 
 botonOcultar.addEventListener("click", () =>{
    console.log("cerrado");

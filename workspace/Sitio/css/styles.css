@@ -8,7 +8,7 @@ body{
   align-items: center;
   font-family: 'Jua', sans-serif;
   min-height: 100vh;
-  background: url('PantallaFondo.jpg') no-repeat;
+  background: url('../img/PantallaFondo.jpg') no-repeat;
   background-size: cover;
   background-position: center;
  }
@@ -120,6 +120,7 @@ height: 650px;
   border-radius: 20px;
   transform-style: preserve-3d; /* Mantiene la estructura 3D para los elementos hijos */
   transition: 0.6s; /* Agrega una transición suave para las transformaciones */
+
 
 }
 .card-inner {     
@@ -363,7 +364,7 @@ box-shadow: 0 0 50px #BE1621;
   width: 400px;
   padding: 20px;
   transform: translate(-50%, -50%);
-  background: url(background.png);
+  background: url(../img/background.png);
   box-sizing: border-box;
   box-shadow: 0 15px 25px rgba(0,0,0,.6);
   border-radius: 10px;

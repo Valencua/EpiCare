@@ -115,52 +115,6 @@ height: 650px;
  justify-content: center;
  align-items: center;;
  }
-.card2, .card {
-  width: 450px;
-  border-radius: 20px;
-  transform-style: preserve-3d; /* Mantiene la estructura 3D para los elementos hijos */
-  transition: 0.6s; /* Agrega una transición suave para las transformaciones */
-
-
-}
-.card-inner {     
-  padding-bottom: 100%; 
-  transition: 0.6s;
-  transform-style: preserve-3d;
-  
-}
-.card:hover .card-inner,.card2:hover .card-inner  {
-  transform:rotateY(180deg);
-}
-.card-front, .card-back {
-  position:absolute;
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
-  display:flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 28px;
-}
-.card-back p{
-  color:black;
-  position: absolute;
-  padding: 10px;
-}
-.card-front {
-  border-radius: 40px;
-  background-color: #854671;
-  border:5px solid #672659;
-  padding: 10px;
-}
-.card-back {
-  border-radius: 40px;
-  padding: 10px;
-  box-shadow: 0 15px 25px rgba(0,0,0,.6);
-  background-color: #D190BF;
-  transform:rotateY(180deg);
-  border:5px solid #672659;
-}
 .profile-page
 {
   width: 500px;

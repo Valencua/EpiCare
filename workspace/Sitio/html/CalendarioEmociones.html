@@ -8,68 +8,31 @@
 <title>EpiCare</title>
 </head>
 <body>
-  <header class="flecha" style="margin:36px; height: 100px; display: flex; align-items: center;">
-    <a href="Lobby.html"><img src="../img/Flecha.png" style=" width:56px;"></a> 
-  </header>
-<div class="calendar-container">
-    <h1>Calendario de Emociones</h1>
-    <div id="calendar" class="calendar"></div>
+  <header class="calendar-header" style="margin: 36px; display: flex; align-items: center;">
+    <button id="prevMonth">←</button>
+    <h1 id="calendarTitle">Month Year</h1>
+    <button id="nextMonth">→</button>
+</header>
+
+<div class="calendar">
+    <table>
+        <thead>
+            <tr>
+                <th><img src="../img/Nube.png" alt="Nube" class="day-name-image">Sun</th>
+                <th><img src="../img/Nube.png" alt="Nube" class="day-name-image">Mon</th>
+                <th><img src="../img/Nube.png" alt="Nube" class="day-name-image">Tue</th>
+                <th><img src="../img/Nube.png" alt="Nube" class="day-name-image">Wed</th>
+                <th><img src="../img/Nube.png" alt="Nube" class="day-name-image">Thu</th>
+                <th><img src="../img/Nube.png" alt="Nube" class="day-name-image">Fri</th>
+                <th><img src="../img/Nube.png" alt="Nube" class="day-name-image">Sat</th>
+            </tr>
+        </thead>
+        <tbody id="calendarBody">
+            <!-- El contenido del calendario se llenará dinámicamente con JavaScript -->
+        </tbody>
+    </table>
 </div>
 
-<script>
-  const calendarElement = document.getElementById('calendar');
-  
-  // Obtener la fecha actual
-  const currentDate = new Date();
-  let currentYear = currentDate.getFullYear();
-  let currentMonth = currentDate.getMonth();
-  
-  // Función para mostrar el calendario
-  function showCalendar(year, month) {
-    const daysInMonth = new Date(year, month + 1, 0).getDate();
-    const firstDayOfMonth = new Date(year, month, 1).getDay();
-    
-    const calendarGrid = document.createElement('div');
-    calendarGrid.className = 'calendar';
-    
-    // Llenar días en blanco hasta el primer día del mes
-    for (let i = 0; i < firstDayOfMonth; i++) {
-      const emptyDay = document.createElement('div');
-      emptyDay.className = 'day';
-      calendarGrid.appendChild(emptyDay);
-    }
-    
-    // Llenar días del mes
-    for (let day = 1; day <= daysInMonth; day++) {
-      const dayElement = document.createElement('div');
-      dayElement.className = 'day';
-      
-      const dayNumber = document.createElement('span');
-      dayNumber.className = 'day-number';
-      dayNumber.textContent = day;
-      
-      const icon = document.createElement('span');
-      icon.className = 'icon';
-      icon.textContent = '📌';
-      
-      // Agregar evento para agregar información a la base de datos al hacer clic en el icono
-      icon.addEventListener('click', () => {
-        const dateClicked = new Date(year, month, day);
-        // Aquí podrías implementar la lógica para agregar información a la base de datos
-        console.log('Fecha seleccionada:', dateClicked);
-      });
-      
-      dayElement.appendChild(dayNumber);
-      dayElement.appendChild(icon);
-      calendarGrid.appendChild(dayElement);
-    }
-    
-    calendarElement.innerHTML = '';
-    calendarElement.appendChild(calendarGrid);
-  }
-  
-  // Mostrar el calendario inicial
-  showCalendar(currentYear, currentMonth);
-</script>
+<script src="../js/calendar.js"></script>
 </body>
 </html>

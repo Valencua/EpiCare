@@ -1,0 +1,13 @@
+.calendar td::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30px; /* Ajusta el tamaño de la nube según sea necesario */
+    height: 30px; /* Ajusta el tamaño de la nube según sea necesario */
+    background: url('../img/Rectangle 165.png') center center no-repeat;
+    background-size: contain;
+    z-index: 6;
+}

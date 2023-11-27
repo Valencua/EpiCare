@@ -114,6 +114,7 @@ body {
 .tacho{
     width: 64px;
     margin-right: 60px;
+    margin-top: 50px;
     cursor:pointer;
 }
 footer{

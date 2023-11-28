@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+html {
+  height: 100%;
+}
+
+body {
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Jua', sans-serif;
+  min-height: 100vh;
+  background: url('../img/PantallaFondo.jpg') no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.padre {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0px;
+}
+
+.card {
+  width: 330px;
+  height: 430px;
+  padding: 0px;
+  transition: 0.6s;
+  perspective: 1000px;
+}
+
+.card-inner {
+  width: 100%;
+  height: 100%;
+  transition: 0.6s;
+  transform-style: preserve-3d;
+  padding: 0px;
+}
+
+.card:hover .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-front, .card-back {
+  display: flex;
+  justify-content: center;
+  border: 5px solid #672659;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  backface-visibility: hidden;
+  position: absolute;
+  align-items: flex-start;
+}
+
+.card-front {
+  background-color: #854671;
+  align-items: center;
+}
+
+.card-back {
+  background-color: #D190BF;
+  transform: rotateY(180deg);
+  flex-direction: column;
+  padding: 15px;
+  text-align: start;
+  font-family: 'Inter', sans-serif;
+  align-items: flex-start;
+  line-height: 1.5;
+  justify-content: start;
+  padding-bottom: 0px;
+}
+
+.card-inner:hover {
+  transform: rotateY(180deg);
+}
+.columna{
+    width: 250px;
+    height: 100%;
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+}
+.columna2{
+  justify-content: end;
+  height: 300px;
+  margin-bottom: 70px;
+}
+.vinculos{
+    justify-content: center;
+    align-items: end;
+    gap:30px
+}
+.name{
+    font-family: 'Jua', sans-serif;
+    background-color: #854671;
+    color:#301833;
+    font-size: 30px;
+    padding:0px 40px;
+    margin:0px;
+    border-radius: 30px;
+}
+.foto, .foto img{
+    padding:0px;
+    margin:0px;
+    width: 200px;
+}
+.tacho{
+    width: 64px;
+    margin-right: 60px;
+    margin-top: 50px;
+    cursor:pointer;
+}
+footer{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    height: 120px;
+}
+.footer2{
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  align-items: start;
+  height: 100px;
+}
+.userVinculo{
+  cursor:pointer;
+}
+.cuadro{
+    width: 900px;
+    height: 500px;
+    border-radius: 20px;
+    background-color: #361231E5;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap:0px;
+    visibility: hidden;
+    z-index:11;
+}
+.item{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    padding:0px;
+}
+.item img{
+    margin: 20px;
+    width: 50px;
+    cursor:pointer;
+}
+#agregar{
+    cursor:pointer;
+}
+.item2{
+    width: 100%; 
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+}
+.item2child, .item2child2{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+}
+.item2child{
+  justify-content: end;
+}
+.item2child2{
+  justify-content: start;
+  gap:40px;
+}
+.item2child h1{
+  font-size: 50px;
+  font-weight: 100;
+  letter-spacing: 0em;
+  text-align: left;
+  color:#E2C6E1;
+  padding:0px;
+  margin:10px;
+}
+.item2child2 input{
+  width: 400px;
+  height: 30px;
+  border-radius: 10px;
+  background-color: #F1DAEB;
+  padding: 3px;
+  border: 3px solid #F1DAEB; 
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+}
+.item2child2 button{
+  width: 200px;
+  height: 50px;
+  border-radius: 15px;
+  border: 4px solid #954392;
+  background-color: #C687B9;
+  text-align: center;
+  color: #541D4F;
+  font-size: 25px;
+  font-family: 'Jua', sans-serif;
+  font-weight: 550;
+  letter-spacing: 0.5px;
+}
+.eliminar{
+  visibility: hidden;
+  width: 60px;
+  position: absolute;
+  margin-bottom: 180px;
+  margin-left: 146px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.menos{
+  width: 50px;
+}
+.name2{
+  background-color: #9B4A96;
+}

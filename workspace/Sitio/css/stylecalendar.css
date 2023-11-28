@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+
+html {
+    height: 100%;
+}
+
+body {
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    min-height: 100vh;
+    background: url('../img/PantallaFondo.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: 'Jua', sans-serif;
+    color: #662759;
+}
+
+main {
+    margin: 0px 100px;
+}
+
+.calendar {
+    margin: 20px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.calendar table {
+    width: 80%;
+    border-collapse: separate;
+    border-spacing: 10px;
+    padding: 0px 80px;
+}
+
+.calendar th {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    font-size: 18px;
+}
+
+.calendar th::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -7px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../img/Nube.png') center bottom no-repeat;
+    background-size: auto 80%;
+    z-index: -1;
+}
+
+.calendar td {
+    border: 3px solid #601E51;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    height: 40px;
+    width: 40px; /* Ajusta el tamaño del casillero según tu preferencia */
+    border-radius: 5px;
+    background-color: #8B4B77;
+}
+
+.calendar td::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30px; /* Ajusta el tamaño de la nube según sea necesario */
+    height: 30px; /* Ajusta el tamaño de la nube según sea necesario */
+    background: url('../img/Vector.png') center center no-repeat;
+    background-size: contain;
+    z-index: 6;
+}
+.calendar td.empty::before {
+    content: '-'; /* Oculta la nube en casilleros vacíos */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+}
+.calendar td span {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 12px;
+    color: #662759;
+}
+
+.day-name-image {
+    width: 30px;
+    height: auto;
+}
+
+.calendar thead th {
+    background-color: transparent;
+    border: 0px;
+}
+
+.calendar-header {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.calendar-header button {
+    background-color: #8B4B77;
+    color: #512347;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#calendarTitle {
+    margin: 0;
+    font-weight: 400;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #F5D7E9;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #6D345A;
+}

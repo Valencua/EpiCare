@@ -1,59 +1,63 @@
 <!DOCTYPE html>
   <html lang="en">
   <head>
-    <link rel="Website Icon" type="png" href="Logo-Epicare.png">
+    <link rel="Website Icon" type="png" href="../img/Logo-Epicare.png">
       <meta charset="UTF-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>EpiCare</title>
-      <link rel="stylesheet" href="styles.css">
+      <link rel="stylesheet" href="../css/styles.css">
   </head>
   <body style="display:flex; align-items:center; justify-content:center;">
   <div class="login-page">
     <div class="form">
       <form class="register-form" method="POST">
-        <h2>Registrarse</h2>
+        <h2 style="color:#E188B3; -webkit-text-stroke-width: 1px; -webkit-text-stroke-color: #601E51; font-size: 40px; margin-top: 1px; font-weight: 5px;">Registrarse</h2>
         <label for="nombre">Ingrese nombre completo</label>
         <input type="text" placeholder="Nombre completo *" id="nombre" required/>
-        <label for="usuario">Ingrese usuario</label>
-        <input type="text" placeholder="Usuario *" id="usuario" required/>
+        <label for="apellido">Ingrese apellido completo</label>
+        <input type="text" placeholder="Apellido *" id="apellido" required/>
         <label for="email">Ingrese email</label>
         <input type="email" placeholder="ejemplo@gmail.com" id="email" required/>
+        <label for="usuario">Ingrese usuario</label>
+        <input type="text" placeholder="Usuario *" id="usuarior" required/>
         <label for="password">Ingrese contraseña</label>
         <input type="password" id="password" placeholder="Contraseña *" required/>
-        <label for="vinculo" >¿Eres vínculo?</label>
-        <input id="vinculo" class="vinculo" type="checkbox"/>
-        <div class="registrado">
-          <a class="btn" type="submit" href="#">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            Continuar
-          </a>
+        <input type="checkbox" id="ver">
+        <span><label for="vinculo" >¿Eres vínculo?</label><input id="vinculo" class="vinculo" type="checkbox"/></span>
+        <div class="botonbienv">
+          <div class="continuar" style="height: 25px;">
+            <a class="btn" href="#" id="registrar" style="color:#541D4F; font-size: 18px; margin:12px; margin-top: 2px;">
+              Continuar
+            </a>
+          </div>   
         </div>
         <p class="message">¿Ya tienes cuenta? <a href="#">Loguearse</a></p>
+        <p class="mensajer"></p>
       </form>
       <form class="login-form" method="post">
-        <h2></i> Login</h2>
+        <h2 style="color:#E188B3; -webkit-text-stroke-width: 1px; -webkit-text-stroke-color: #601E51; font-size: 40px; padding:0px; margin:0px;"></i> Login</h2>
         <label for="usuario">Ingrese usuario</label>
         <input type="text" placeholder="Usuario" id="usuario" required />
         <br>
-        <label for="contraseña">Ingrese contraseña</label>
-        <input type="password" placeholder="Contraseña" id="contraseña" required/>
         <br>
-        <a class="btn" href="#">
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          Continuar
-        </a>
+        <label for="contraseña">Ingrese contraseña</label>
+        <input type="password" placeholder="Contraseña" id="contrasenia" required/>
+        <br>
+        <br>
+        <div class="botonbienv">
+          <div class="continuar" style="height: 25px;">
+            <a class="btn" href="#" id="login" style="color:#541D4F; font-size: 18px; margin:12px; margin-top: 2px;">
+              Continuar
+            </a>
+          </div>   
+        </div>
         <p class="message">¿No tienes cuenta? <a href="#">Crea una cuenta</a></p>
+        <p class="mensaje"></p>
       </form>
     </div>
   </div>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="main.js"></script>
+  <script src="../js/main.js"></script>
   </body>
   </html>
